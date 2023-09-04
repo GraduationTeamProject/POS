@@ -707,9 +707,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -6.307016, y: -6.3576984, z: -7.094657}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -6.307016, y: -6.3576984, z: -7.094657}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -755,9 +755,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.08615565, y: 0.90808374, z: -0.23120418, w: -0.33838743}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.08476688, y: 0.9100976, z: -0.23171692, w: -0.33293283}
   m_Size:
     m_Target: 10
     speed: 2
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_LastFolders: []
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\\uD55C\uC131\uBC94\\Desktop\\\uD55C\uC131\uC9C4\\2023
-    \uC878\uC5C5\uC791\uD488\\POS"
+    \uC878\uC5C5\uC791\uD488\\TeamProject\\POS"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
