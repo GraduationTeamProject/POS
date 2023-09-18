@@ -783,6 +783,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 32000
+  m_SortAtRoot: 0
 --- !u!1 &6878822119114284373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,6 +1112,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1595251472046566641}
     m_Modifications:
     - target: {fileID: 1592230186234949352, guid: e411b46c5d2514e49b26bd300e9ed8ce, type: 3}
@@ -1166,6 +1168,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1086252671028184794}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e411b46c5d2514e49b26bd300e9ed8ce, type: 3}
 --- !u!4 &1593233024999764059 stripped
 Transform:
@@ -1177,6 +1182,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1595251472046566641}
     m_Modifications:
     - target: {fileID: 3626493631032143714, guid: eed9e61964b17194d94ce56bffabb610, type: 3}
@@ -1232,6 +1238,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1086252671028184794}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed9e61964b17194d94ce56bffabb610, type: 3}
 --- !u!4 &4117179676178661334 stripped
 Transform:
@@ -1243,6 +1252,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1595251472046566641}
     m_Modifications:
     - target: {fileID: 3535746112591574418, guid: 67c52e745f2766644ba16bfb165e2659, type: 3}
@@ -1298,6 +1308,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1086252671028184794}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67c52e745f2766644ba16bfb165e2659, type: 3}
 --- !u!4 &1493371769922722511 stripped
 Transform:
