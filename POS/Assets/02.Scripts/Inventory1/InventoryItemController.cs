@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class InventoryItemController : MonoBehaviour
 {
-    public Item item;
+    /*이 스크립트는 아이템슬롯에 적용되는 스크립트로, 
+     인벤토리 UI에 표시되는 아이템을 삭제하거나,
+    아이템을 리스트에 더하거나, 아이템을 꺼내는 함수가 작성되어있습니다.*/
+    public Item item;       
     public Button RemoveButton;
     public GameObject[] Items;
     public string ItemName;
@@ -40,10 +43,12 @@ public class InventoryItemController : MonoBehaviour
             if (item.gameObject.name.ToString().Contains(ItemName.ToString()))
                 {
                     GameObject InstanItem = Instantiate(item);
+                    //쉐이더 효과
                     InstanItem.GetComponent<MeshRenderer>().material.SetVector("_DissolveOffest", new Vector3(0, 1, 0));
+                    
+                    //꺼냈으면 아이템 개수를 줄여야 하기 위한 처리
                     InstanItem.GetComponent<ItemPickUp>().Item.Count--;
                     ItemController itemController = InstanItem.GetComponent<ItemController>();
-                    //나올떄 스르륵나오게하고싶은데..이상하네
                     itemController.Start = true;
 
                 //(추가)개수 0 이면 아이템슬롯UI 안보이게 삭제

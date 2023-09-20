@@ -15,7 +15,7 @@ C:/Users/USER/Documents/GitHub/POS/POS
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50292
+59669
 Successfully changed project path to: C:/Users/USER/Documents/GitHub/POS/POS
 C:/Users/USER/Documents/GitHub/POS/POS
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/USER/Documents/GitHub/POS/POS
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3712] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 648818450 [EditorId] 648818450 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16584] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 2670993198 [EditorId] 2670993198 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3712] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 648818450 [EditorId] 648818450 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16584] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 2670993198 [EditorId] 2670993198 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 20.05 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 0.53 ms.
+Refreshing native plugins compatible for Editor in 21.89 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.59 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/POS/POS/Assets
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007931 seconds.
-- Loaded All Assemblies, in  0.368 seconds
+Registered in 0.007985 seconds.
+- Loaded All Assemblies, in  0.374 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1736 ms
+Android Extension - Scanning For ADB Devices 252 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.106 seconds
-Domain Reload Profiling: 2473ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 991ms
+	BeginReloadAssembly (95ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (161ms)
-		LoadAssemblies (87ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (94ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (156ms)
 			TypeCache.Refresh (155ms)
 				TypeCache.ScanAssembly (142ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (2106ms)
+	FinalizeReload (619ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2039ms)
+		SetupLoadedEditorAssemblies (553ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1863ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (379ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (116ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (111ms)
 			ProcessInitializeOnLoadMethodAttributes (54ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -119,8 +119,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Documents\GitHub\POS\POS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Documents\GitHub\POS\POS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.997 seconds
-Refreshing native plugins compatible for Editor in 12.70 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.941 seconds
+Refreshing native plugins compatible for Editor in 12.16 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -149,47 +149,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.876 seconds
-Domain Reload Profiling: 1870ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.838 seconds
+Domain Reload Profiling: 1777ms
+	BeginReloadAssembly (131ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (743ms)
-		LoadAssemblies (370ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (710ms)
+		LoadAssemblies (327ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (444ms)
-			TypeCache.Refresh (393ms)
-				TypeCache.ScanAssembly (375ms)
+		AnalyzeDomain (438ms)
+			TypeCache.Refresh (388ms)
+				TypeCache.ScanAssembly (371ms)
 			ScanForSourceGeneratedMonoScriptInfo (37ms)
 			ResolveRequiredComponents (14ms)
-	FinalizeReload (876ms)
+	FinalizeReload (839ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (657ms)
+		SetupLoadedEditorAssemblies (630ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
+			InitializePlatformSupportModulesInManaged (26ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (383ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (367ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 8.08 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 6290 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 117 unused Assets / (368.3 KB). Loaded Objects now: 6756.
-Memory consumption went from 234.1 MB to 233.8 MB.
-Total: 5.374500 ms (FindLiveObjects: 1.072600 ms CreateObjectMapping: 0.271300 ms MarkObjects: 3.672800 ms  DeleteObjects: 0.356300 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 7.90 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 6291 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 117 unused Assets / (370.1 KB). Loaded Objects now: 6759.
+Memory consumption went from 235.2 MB to 234.9 MB.
+Total: 4.537100 ms (FindLiveObjects: 0.569700 ms CreateObjectMapping: 0.247600 ms MarkObjects: 3.423700 ms  DeleteObjects: 0.295000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -204,20 +204,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 439.332966 seconds.
-  path: Assets/Oculus Hands/Animations/l_hand_default_anim.fbx
-  artifactKey: Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus Hands/Animations/l_hand_default_anim.fbx using Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52010ac5d278af365618ce758b67b0b1') in 0.016569 seconds
+  Time since last request: 35799.757835 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(9e949fe729c40704fbc6e5b3fd1edf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(9e949fe729c40704fbc6e5b3fd1edf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a01efde99069ab013c6592a19ae1b3') in 0.008755 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 56
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 13.48 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 12.56 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2 unused Assets / (290.7 KB). Loaded Objects now: 6757.
-Memory consumption went from 112.1 MB to 111.9 MB.
-Total: 4.717100 ms (FindLiveObjects: 0.934700 ms CreateObjectMapping: 0.299900 ms MarkObjects: 3.402200 ms  DeleteObjects: 0.078700 ms)
+Unloading 2 unused Assets / (290.7 KB). Loaded Objects now: 6760.
+Memory consumption went from 112.9 MB to 112.7 MB.
+Total: 4.829500 ms (FindLiveObjects: 0.924400 ms CreateObjectMapping: 0.300900 ms MarkObjects: 3.533200 ms  DeleteObjects: 0.069800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -232,6 +232,118 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21.360314 seconds.
+  path: Assets/Mars-Rover/Meshes
+  artifactKey: Guid(3e4a5c1413bcd0849a68773167c0abc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes using Guid(3e4a5c1413bcd0849a68773167c0abc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444715d11fba8add2bb6f2c5d2f092de') in 0.004184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023426 seconds.
+  path: Assets/Mars-Rover/Meshes/Mars_Rover.FBX
+  artifactKey: Guid(f42ccb6968932b2499a902a69ed70070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Mars_Rover.FBX using Guid(f42ccb6968932b2499a902a69ed70070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d31658ab0dfdbd92f36b5cb5a57a246') in 0.015095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 1.386993 seconds.
+  path: Assets/Mars-Rover/Textures
+  artifactKey: Guid(baae5c55006b01043bcbaf0350d025fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Textures using Guid(baae5c55006b01043bcbaf0350d025fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ef4dd0592933cbc9a1215152346479') in 0.000728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.054704 seconds.
+  path: Assets/Mars-Rover/Textures/CMR_albedo.tif
+  artifactKey: Guid(2dc4db9c6d747814595d73dff21cfbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Textures/CMR_albedo.tif using Guid(2dc4db9c6d747814595d73dff21cfbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0136f03dab72508902de2ac52305e42f') in 0.031580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mars-Rover/Textures/CMR_normal.tif
+  artifactKey: Guid(a03bbfb67b8f0ab49bc5faca8de465bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Textures/CMR_normal.tif using Guid(a03bbfb67b8f0ab49bc5faca8de465bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7c91116bcd2fc3ceed2cf7b633e2a8') in 0.023385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Mars-Rover/Textures/CMR_metallic.tif
+  artifactKey: Guid(1dda5bb76a4e359428341b77e927e9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Textures/CMR_metallic.tif using Guid(1dda5bb76a4e359428341b77e927e9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bd3e73040da19cf116f8342024b2d1') in 0.022121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 229.749842 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_02.fbx
+  artifactKey: Guid(12551519c72530748bcfb060dfc2db09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_02.fbx using Guid(12551519c72530748bcfb060dfc2db09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20737790d5d85b89194f01cf4854288e') in 0.003089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_15.fbx
+  artifactKey: Guid(33b904e8d80028b4fa75cff29015a59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_15.fbx using Guid(33b904e8d80028b4fa75cff29015a59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ecce761fc3ebe94fa7cf35b38b824a') in 0.002471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_04.fbx
+  artifactKey: Guid(1fff77d5b015c8e43bbc771440109276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_04.fbx using Guid(1fff77d5b015c8e43bbc771440109276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7799efdee52b1cf1d119753537c76cf') in 0.002001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_07.fbx
+  artifactKey: Guid(428ff4211032ac247ada0b3350894e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_07.fbx using Guid(428ff4211032ac247ada0b3350894e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724b09ddd3e19c414d346d8d3e2ed8d5') in 0.002378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_05.fbx
+  artifactKey: Guid(1a284dfdc3140604398b1d3654a951ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_05.fbx using Guid(1a284dfdc3140604398b1d3654a951ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93483aaa1149486460b79cb20151d2a3') in 0.001751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_11.fbx
+  artifactKey: Guid(5df12011a80f85641b46a20883d36c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_11.fbx using Guid(5df12011a80f85641b46a20883d36c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4225810f8bdee0866b96ac72a6641689') in 0.001721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_10.fbx
+  artifactKey: Guid(3e20d22e84f92df4e96bf1c4e0b1a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_10.fbx using Guid(3e20d22e84f92df4e96bf1c4e0b1a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79664b0ab6faf1e8fb629fb1fac308ed') in 0.001983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mars-Rover/Meshes/Crate_08.fbx
+  artifactKey: Guid(5c99934c3c02ecd4590f102e26e68f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mars-Rover/Meshes/Crate_08.fbx using Guid(5c99934c3c02ecd4590f102e26e68f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29befcf40dbfd3c951eae1ad4bf8b4f8') in 0.001785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
 AssetImportWorker is now disconnected from the server

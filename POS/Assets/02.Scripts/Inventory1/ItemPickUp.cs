@@ -15,5 +15,6 @@ public class ItemPickUp : MonoBehaviour
         InventoryManager.Instance.ListItems();
         //Destroy(gameObject);
         gameObject.SetActive(false);
+       
     }
 }
