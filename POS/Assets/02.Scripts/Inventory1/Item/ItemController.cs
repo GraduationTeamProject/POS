@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ItemController : MonoBehaviour
 {
     public Item Item;
     private MeshRenderer Mesh;
+    
 
     public bool Start = false;
 
@@ -20,7 +22,9 @@ public class ItemController : MonoBehaviour
 
     public IEnumerator SpawnMeshRenderer()
     {
+        GetComponent<XRGrabInteractable>().enabled = false;
         Debug.Log("Ω¶¿Ã¥ıΩ««‡");
+        
         Rigidbody rigid = this.gameObject.GetComponent<Rigidbody>();
         Mesh = this.gameObject.GetComponent<MeshRenderer>();
 
@@ -40,6 +44,8 @@ public class ItemController : MonoBehaviour
           
 
         }
+
+        GetComponent<XRGrabInteractable>().enabled = true;
         rigid.isKinematic = false;
         
     }

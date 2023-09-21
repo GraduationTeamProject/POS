@@ -12,4 +12,13 @@ public class CrateBox : MonoBehaviour
             
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Item")
+        {
+            other.gameObject.GetComponent<ItemPickUp>().PickUp();
+
+        }
+    }
 }
