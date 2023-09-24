@@ -15,7 +15,7 @@ C:/Users/USER/Documents/GitHub/POS/POS
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54161
+50455
 Successfully changed project path to: C:/Users/USER/Documents/GitHub/POS/POS
 C:/Users/USER/Documents/GitHub/POS/POS
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/USER/Documents/GitHub/POS/POS
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20840] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 611328560 [EditorId] 611328560 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21328] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 1904440509 [EditorId] 1904440509 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20840] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 611328560 [EditorId] 611328560 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21328] Host "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 1904440509 [EditorId] 1904440509 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J84SJND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 20.45 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 0.59 ms.
+Refreshing native plugins compatible for Editor in 18.88 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.62 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/POS/POS/Assets
@@ -69,47 +69,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008227 seconds.
-- Loaded All Assemblies, in  0.378 seconds
+Registered in 0.006994 seconds.
+- Loaded All Assemblies, in  0.365 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 244 ms
+Android Extension - Scanning For ADB Devices 221 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.608 seconds
-Domain Reload Profiling: 984ms
-	BeginReloadAssembly (95ms)
+- Finished resetting the current domain, in  0.591 seconds
+Domain Reload Profiling: 956ms
+	BeginReloadAssembly (88ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (165ms)
-		LoadAssemblies (93ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (86ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (160ms)
-			TypeCache.Refresh (159ms)
-				TypeCache.ScanAssembly (146ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (142ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (608ms)
+	FinalizeReload (591ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (542ms)
+		SetupLoadedEditorAssemblies (523ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (372ms)
+			InitializePlatformSupportModulesInManaged (349ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (112ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (114ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Documents\GitHub\POS\POS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Documents\GitHub\POS\POS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.937 seconds
-Refreshing native plugins compatible for Editor in 12.71 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.965 seconds
+Refreshing native plugins compatible for Editor in 11.80 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -149,47 +149,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.841 seconds
-Domain Reload Profiling: 1776ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  0.956 seconds
+Domain Reload Profiling: 1919ms
+	BeginReloadAssembly (124ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (36ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (705ms)
-		LoadAssemblies (330ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (740ms)
+		LoadAssemblies (321ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (434ms)
-			TypeCache.Refresh (382ms)
-				TypeCache.ScanAssembly (367ms)
-			ScanForSourceGeneratedMonoScriptInfo (37ms)
+		AnalyzeDomain (468ms)
+			TypeCache.Refresh (414ms)
+				TypeCache.ScanAssembly (396ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
 			ResolveRequiredComponents (15ms)
-	FinalizeReload (842ms)
+	FinalizeReload (957ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (635ms)
+		SetupLoadedEditorAssemblies (712ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
+			InitializePlatformSupportModulesInManaged (30ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (371ms)
-			ProcessInitializeOnLoadMethodAttributes (134ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (414ms)
+			ProcessInitializeOnLoadMethodAttributes (150ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 6.51 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 6292 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 117 unused Assets / (370.1 KB). Loaded Objects now: 6760.
-Memory consumption went from 235.4 MB to 235.0 MB.
-Total: 3.358100 ms (FindLiveObjects: 0.369400 ms CreateObjectMapping: 0.236100 ms MarkObjects: 2.547200 ms  DeleteObjects: 0.204400 ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 13.22 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 6295 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 117 unused Assets / (368.7 KB). Loaded Objects now: 6763.
+Memory consumption went from 235.6 MB to 235.3 MB.
+Total: 4.797200 ms (FindLiveObjects: 0.950800 ms CreateObjectMapping: 0.238300 ms MarkObjects: 3.331600 ms  DeleteObjects: 0.275100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -205,86 +205,89 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4979.012489 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Models/Primitives/Cube.fbx
-  artifactKey: Guid(7cf3ac7bcd2e5471fb54d5f5da9aad56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Models/Primitives/Cube.fbx using Guid(7cf3ac7bcd2e5471fb54d5f5da9aad56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc4c0170bd052b78690ee4f869c57e5') in 0.019763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.168911 seconds.
-  path: Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Models/Slider.fbx
-  artifactKey: Guid(9ab4c46d2bfe63d40aa79f294b892443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Models/Slider.fbx using Guid(9ab4c46d2bfe63d40aa79f294b892443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858f785dc489a10c7186940ee484d46f') in 0.002488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 69.297332 seconds.
-  path: Assets/Settings/High_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(eac00f82effec3343be6c76f63c08a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/High_PipelineAsset_ForwardRenderer.asset using Guid(eac00f82effec3343be6c76f63c08a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8a634c6a9ee477b868dbcc70c2d5f8') in 0.002144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Settings/Very Low_PipelineAsset.asset
-  artifactKey: Guid(0aad393a7b10e3a468d4742abd722282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Very Low_PipelineAsset.asset using Guid(0aad393a7b10e3a468d4742abd722282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3e844ee7b928fc2646be691afa55fa') in 0.002322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(435bd29fceef7fe4e8c23b66d21fff43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset using Guid(435bd29fceef7fe4e8c23b66d21fff43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db821ae829078ba334f1e8f3c28ff0a') in 0.002038 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Settings/Low_PipelineAsset.asset
-  artifactKey: Guid(4d49a0b16dc4ea340aa4056a11a4ea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Low_PipelineAsset.asset using Guid(4d49a0b16dc4ea340aa4056a11a4ea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70de093c4d83d4158e7e44eda4eb53e1') in 0.002494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(a492e1b25ea90a74595b347984276e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset using Guid(a492e1b25ea90a74595b347984276e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec92ed6f85bce64f95603d6fdd3e7382') in 0.002373 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(5e3d01d9472390845b5290fadf943c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset using Guid(5e3d01d9472390845b5290fadf943c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b26773a5f4ee370e50e1b5b7cab146') in 0.001803 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 26.374503 seconds.
-  path: Assets/ShaderGraph_Dissolve/URP/Materials/Shader Graphs_Dissolve_Dissolve_Direction_Metallic_DoubleSide.mat
-  artifactKey: Guid(315f30cf6d8fbbb4597bda716792e603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShaderGraph_Dissolve/URP/Materials/Shader Graphs_Dissolve_Dissolve_Direction_Metallic_DoubleSide.mat using Guid(315f30cf6d8fbbb4597bda716792e603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74849986cbf4482b3cdb0bfef4de9a9f') in 0.001226 seconds
+  Time since last request: 1021.044958 seconds.
+  path: Assets/04.Materials/Orange.mat
+  artifactKey: Guid(5d0bd20b968b5c244ac4730b9649a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.Materials/Orange.mat using Guid(5d0bd20b968b5c244ac4730b9649a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13751b0ddaec84beb984774cff0920b6') in 0.011026 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
-  path: Assets/ShaderGraph_Dissolve/URP/Materials/Shader Graphs_Dissolve_Dissolve_Direction_Metallic_DoubleSide_WorldSpaceOffest.mat
-  artifactKey: Guid(dbb389c368294a84982285c41311178a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShaderGraph_Dissolve/URP/Materials/Shader Graphs_Dissolve_Dissolve_Direction_Metallic_DoubleSide_WorldSpaceOffest.mat using Guid(dbb389c368294a84982285c41311178a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf297daabe94cc50866d444da933d23') in 0.001396 seconds
+  path: Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Shaders/Unity_Hand_Noise_HDR.shadergraph
+  artifactKey: Guid(882bbd70d867c23418d3e8aef80294aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Shaders/Unity_Hand_Noise_HDR.shadergraph using Guid(882bbd70d867c23418d3e8aef80294aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8542c4e2019ab0a04c9f6895cb6b0478') in 0.002914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/PrimitivesBlue.mat
+  artifactKey: Guid(3a84a7b91ec88714486e0c4cc9a5dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/PrimitivesBlue.mat using Guid(3a84a7b91ec88714486e0c4cc9a5dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f8bf54d23f80f76d1a5f5f65892cb0') in 0.001100 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.635615 seconds.
+  path: Assets/ShaderGraph_Dissolve/URP/ShaderGraph/Dissolve_Unlit.shadergraph
+  artifactKey: Guid(efb1d26729dab8341947b355fc21a823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderGraph_Dissolve/URP/ShaderGraph/Dissolve_Unlit.shadergraph using Guid(efb1d26729dab8341947b355fc21a823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e638d9fbc4deef29c6bf909d97c15c36') in 0.002356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.710517 seconds.
+  path: Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/ClawMachine/Barn_White.mat
+  artifactKey: Guid(2008d02afe71492469e2c41ce65fcd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/ClawMachine/Barn_White.mat using Guid(2008d02afe71492469e2c41ce65fcd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73fe577fcdadd520a3b2e5d3bd44e6d9') in 0.001428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.021271 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/Chrome.mat
+  artifactKey: Guid(2edb876ca20f6ea40b4ebb61f96f1df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/Chrome.mat using Guid(2edb876ca20f6ea40b4ebb61f96f1df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8df6fbcab36993e5b57222fdea573eb') in 0.001205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/DepthOnly.mat
+  artifactKey: Guid(455ef821a5429de4baeed61fa958acbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.4.0/Hands Interaction Demo/Runtime/Materials/DepthOnly.mat using Guid(455ef821a5429de4baeed61fa958acbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '969daf0feeab758893b91f9f71d553d8') in 0.001398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.879558 seconds.
+  path: Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/Hole.mat
+  artifactKey: Guid(9e8d496d63ad50744a0057e76919b9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/Hole.mat using Guid(9e8d496d63ad50744a0057e76919b9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828be5bc924e44400628b96c97dbc85a') in 0.001346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Lets Make a VR Game/Models/rocks_v3.fbx
+  artifactKey: Guid(1dd8e872f166b0147bb9fa521a10df8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lets Make a VR Game/Models/rocks_v3.fbx using Guid(1dd8e872f166b0147bb9fa521a10df8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5574da1748f063d98097091f8ae7e2d4') in 0.008811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/LessShinyChrome.mat
+  artifactKey: Guid(a006a4234c92c03478f0cf9cfbb6e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Materials/LessShinyChrome.mat using Guid(a006a4234c92c03478f0cf9cfbb6e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d98ca13c9532cc42190845fef7bf3ee') in 0.001275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ShaderGraph_Dissolve/URP/ShaderGraph/Dissolve_Direction_Metallic.shadergraph
+  artifactKey: Guid(4646cfe8b2b909e468b54c795b40f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderGraph_Dissolve/URP/ShaderGraph/Dissolve_Direction_Metallic.shadergraph using Guid(4646cfe8b2b909e468b54c795b40f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bd402e04dbef4e1d218e29b8ceadc0') in 0.002420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
