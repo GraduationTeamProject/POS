@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Red
   value: 10
   icon: {fileID: 21300000, guid: 6a2ea4bface1f9f4f9fbd3eefa3cb088, type: 3}
-  Count: 1
+  Count: 0

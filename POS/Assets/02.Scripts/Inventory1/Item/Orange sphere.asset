@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Orange
   value: 10
   icon: {fileID: 21300000, guid: 171ed4fa6cd543540886d5ddbc4030c4, type: 3}
-  Count: 1
+  Count: 0

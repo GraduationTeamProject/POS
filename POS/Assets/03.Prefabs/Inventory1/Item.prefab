@@ -528,6 +528,7 @@ MonoBehaviour:
   - {fileID: 3970279264675368498, guid: 9f1470031d529674bb6b6e924725190c, type: 3}
   - {fileID: 1710850591923686278, guid: 532009adbcbf145429407d19f94d91bb, type: 3}
   - {fileID: 385724071048916003, guid: 28f0091dc063c1a488148d5a9a4724fc, type: 3}
+  - {fileID: 4398469353763860747, guid: 8b63b8ae8c0c1264eba8a606d2406563, type: 3}
   ItemName: 
   playerPos: {fileID: 0}
 --- !u!1 &6874268271674007555

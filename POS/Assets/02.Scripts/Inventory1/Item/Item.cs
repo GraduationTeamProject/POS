@@ -13,7 +13,7 @@ public class Item : ScriptableObject
 
     private void Awake()
     {
-        
+        Count = 1;
     }
 
 }

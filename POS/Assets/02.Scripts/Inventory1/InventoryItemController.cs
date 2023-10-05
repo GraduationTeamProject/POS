@@ -14,6 +14,8 @@ public class InventoryItemController : MonoBehaviour
     public string ItemName;
     public Transform playerPos;
 
+    private GameObject InstanItem;
+
     private void Start()
     {
         playerPos = GameObject.FindWithTag("MainCamera").GetComponent<Transform>();
@@ -42,12 +44,30 @@ public class InventoryItemController : MonoBehaviour
             //이름이 같으면
             if (item.gameObject.name.ToString().Contains(ItemName.ToString()))
                 {
-                    GameObject InstanItem = Instantiate(item);
-                    //쉐이더 효과
-                    InstanItem.GetComponent<MeshRenderer>().material.SetVector("_DissolveOffest", new Vector3(0, 1, 0));
+
+
+                    InstanItem = Instantiate(item);
+                    Debug.Log("InstanItem layer:" + InstanItem.layer);
+                    if(item.layer==8)
+                        BuildManager.Instance.OriginalPrefab = InstanItem;
+                
+                   
+
                     
-                    //꺼냈으면 아이템 개수를 줄여야 하기 위한 처리
-                    InstanItem.GetComponent<ItemPickUp>().Item.Count--;
+
+                //설치가능 오브젝트가 아닐때만
+                if (InstanItem.layer!=8)
+                {
+                    //쉐이더 효과
+                    if (InstanItem.GetComponent<MeshRenderer>() != null)
+                        InstanItem.GetComponent<MeshRenderer>().material.SetVector("_DissolveOffest", new Vector3(0, 1, 0));
+                    else
+                        InstanItem.GetComponentInChildren<MeshRenderer>().material.SetVector("_DissolveOffest", new Vector3(0, 1, 0));
+                }
+                   
+
+                //꺼냈으면 아이템 개수를 줄여야 하기 위한 처리
+                InstanItem.GetComponent<ItemPickUp>().Item.Count--;
                     ItemController itemController = InstanItem.GetComponent<ItemController>();
                     itemController.Start = true;
 
@@ -56,7 +76,8 @@ public class InventoryItemController : MonoBehaviour
                         RemoveItem();
                     else
                         InventoryManager.Instance.ListItems();
-                InstanItem.transform.position = playerPos.position + new Vector3(0f, 0f, 1f);
+                if(InstanItem.layer!=8)
+                    InstanItem.transform.position = playerPos.position + new Vector3(0f, 0f, 1f);
             }
         }
        

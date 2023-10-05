@@ -16,7 +16,8 @@ public class ItemController : MonoBehaviour
         if(Start)
         {
             Start = false;
-            StartCoroutine(SpawnMeshRenderer());
+            if(this.gameObject.layer!=8)
+                StartCoroutine(SpawnMeshRenderer());
         }
     }
 
@@ -28,6 +29,10 @@ public class ItemController : MonoBehaviour
         Rigidbody rigid = this.gameObject.GetComponent<Rigidbody>();
         Mesh = this.gameObject.GetComponent<MeshRenderer>();
 
+        if(Mesh==null)
+        {
+            Mesh = this.gameObject.GetComponentInChildren<MeshRenderer>();
+        }
         rigid.isKinematic = true;
         float f = 1f;
         Mesh.material.SetVector("_DissolveOffest", new Vector3(0, f, 0));
