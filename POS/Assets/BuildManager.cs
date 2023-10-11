@@ -15,7 +15,6 @@ public class BuildManager : MonoBehaviour
     //about Controller
     public GameObject RightController;
     private XRController controller;
-   
 
     int layerMask;
 
@@ -51,11 +50,8 @@ public class BuildManager : MonoBehaviour
         //태그가 Installable인 오브젝트를 넘겨받았을때만.
         if (OriginalPrefab != null)
         {
-
-            OriginalPrefab.GetComponent<InstallableObject>().PreViewMaterial();
             //Debug.DrawRay(OriginalPrefab.transform.position, OriginalPrefab.transform.up * (-10f), Color.green, 0.3f);
             //MaxDistance 조절
-
             if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 position))
             {
                 if (position.y > 0)
@@ -88,15 +84,14 @@ public class BuildManager : MonoBehaviour
 
             if (Physics.Raycast(RightController.transform.position, RightController.transform.forward, out RaycastHit hitInfo, MaxDistance, layerMask))
             {
-                
                 if (hitInfo.collider != null)
                 {
-                   
+
                     //텍스처 초록색(설치가능)
                     Layer = hitInfo.collider.gameObject.layer;
                     hitPosition = hitInfo.point;
 
-                    
+
                     Debug.Log("hitPosition:" + hitPosition);
 
                     if (controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool press))
@@ -104,10 +99,10 @@ public class BuildManager : MonoBehaviour
                         if (press == true)
                         {
                             //설치 이펙트
-                            OriginalPrefab.GetComponent<InstallableObject>().OrigianlMaterial();
                             //위치고정과 초기화
+                            OriginalPrefab.GetComponent<BoxCollider>().enabled = true;
                             OriginalPrefab.transform.position = hitPosition;
-                            this.gameObject.GetComponent<BoxCollider>().enabled = true;
+                            
                             OriginalPrefab = null;
                             MaxDistance = 5f;
                         }
@@ -116,7 +111,7 @@ public class BuildManager : MonoBehaviour
                     }
 
                 }
-                else if(hitInfo.collider==null)
+                else if (hitInfo.collider == null)
                 {
                     //텍스처 빨간색(설치불가)
                     Debug.Log("Layer가 9가아님.");
