@@ -15,13 +15,16 @@ public class BuildManager : MonoBehaviour
     //about Controller
     public GameObject RightController;
     private XRController controller;
+   
 
+    int layerMask;
 
     [Range(2, 8)] public float MaxDistance;
 
     //y위치
     private float yPos;
     int Layer;
+    Vector3 hitPosition;
     private void Awake()
     {
         Instance = this;
@@ -37,6 +40,7 @@ public class BuildManager : MonoBehaviour
         바닥(Layer:9)번이 검출이안되는상태. 왜그러지?/
         
          예상 : 1) ray끝에 오브젝트가 달려있어서 오브젝트가 먼저검출된다.*/
+        layerMask = 1 << LayerMask.NameToLayer("Map");
     }
 
     // Update is called once per frame
@@ -47,7 +51,11 @@ public class BuildManager : MonoBehaviour
         //태그가 Installable인 오브젝트를 넘겨받았을때만.
         if (OriginalPrefab != null)
         {
+
+            OriginalPrefab.GetComponent<InstallableObject>().PreViewMaterial();
+            //Debug.DrawRay(OriginalPrefab.transform.position, OriginalPrefab.transform.up * (-10f), Color.green, 0.3f);
             //MaxDistance 조절
+
             if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 position))
             {
                 if (position.y > 0)
@@ -65,16 +73,30 @@ public class BuildManager : MonoBehaviour
             }
 
             Debug.Log("Layer:" + Layer);
-            OriginalPrefab.transform.position = RightController.transform.position + RightController.transform.forward * MaxDistance;
-            
-            if (Physics.Raycast(RightController.transform.position, RightController.transform.forward, out RaycastHit hitInfo, 10))
+            //위치
+            //OriginalPrefab.transform.position = new Vector3(
+            //    RightController.transform.position.x + RightController.transform.forward.x * MaxDistance,
+            //    yPos,
+            //    RightController.transform.position.z + RightController.transform.forward.z * MaxDistance);
+
+            OriginalPrefab.transform.position = hitPosition;
+
+            //if (Physics.Raycast(OriginalPrefab.transform.position, OriginalPrefab.transform.up*(-1),out RaycastHit hit,10,9))
+            //{
+            //    yPos = hit.point.y;
+            //}
+
+            if (Physics.Raycast(RightController.transform.position, RightController.transform.forward, out RaycastHit hitInfo, MaxDistance, layerMask))
             {
-                if (hitInfo.transform != null)
+                
+                if (hitInfo.collider != null)
                 {
+                   
                     //텍스처 초록색(설치가능)
                     Layer = hitInfo.collider.gameObject.layer;
-                    Vector3 hitPosition = hitInfo.transform.position;
-                    yPos = hitPosition.y;
+                    hitPosition = hitInfo.point;
+
+                    
                     Debug.Log("hitPosition:" + hitPosition);
 
                     if (controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool press))
@@ -82,8 +104,10 @@ public class BuildManager : MonoBehaviour
                         if (press == true)
                         {
                             //설치 이펙트
+                            OriginalPrefab.GetComponent<InstallableObject>().OrigianlMaterial();
                             //위치고정과 초기화
                             OriginalPrefab.transform.position = hitPosition;
+                            this.gameObject.GetComponent<BoxCollider>().enabled = true;
                             OriginalPrefab = null;
                             MaxDistance = 5f;
                         }
@@ -92,9 +116,10 @@ public class BuildManager : MonoBehaviour
                     }
 
                 }
-                else
+                else if(hitInfo.collider==null)
                 {
                     //텍스처 빨간색(설치불가)
+                    Debug.Log("Layer가 9가아님.");
                 }
             }
         }

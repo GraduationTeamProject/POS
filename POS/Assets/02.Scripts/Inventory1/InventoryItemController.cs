@@ -49,7 +49,11 @@ public class InventoryItemController : MonoBehaviour
                     InstanItem = Instantiate(item);
                     Debug.Log("InstanItem layer:" + InstanItem.layer);
                     if(item.layer==8)
+                    {
                         BuildManager.Instance.OriginalPrefab = InstanItem;
+                        InstanItem.GetComponent<BoxCollider>().enabled = false;
+                    }
+                        
                 
                    
 
