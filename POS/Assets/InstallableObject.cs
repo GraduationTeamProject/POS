@@ -12,7 +12,7 @@ public class InstallableObject : MonoBehaviour
     public MeshRenderer[] MeshRenderer;
 
 
-    void Start()
+    void Awake()
     {
         
         PriviewMaterial = Resources.Load<Material>("HoloGram");
@@ -48,7 +48,40 @@ public class InstallableObject : MonoBehaviour
     public void OrigianlMaterial()
     {
         MeshRenderer = GetComponentsInChildren<MeshRenderer>();
+       
         for (int i = 0; i < this.MeshRenderer.Length; i++)
             MeshRenderer[i].material = OriginalMaterial[i];
+
+        StartCoroutine(InstallShader());
+    }
+
+    IEnumerator InstallShader()
+    {
+        
+        Debug.Log("½¦ÀÌ´õ½ÇÇà");
+
+       
+       
+       
+        float f = 1f;
+        for (int i = 0; i < this.MeshRenderer.Length; i++)
+            MeshRenderer[i].material.SetVector("_DissolveOffest", new Vector3(0, f, 0));
+        
+        //float materials = Mesh.material.parent.GetVector("_DissolveOffset").y;
+
+        while (f > -1f)
+        {
+
+            yield return new WaitForSeconds(0.003f);
+
+            f -= 0.01f;
+
+            for (int i = 0; i < this.MeshRenderer.Length; i++)
+                MeshRenderer[i].material.SetVector("_DissolveOffest", new Vector3(0, f, 0));
+
+
+        }
+
+       
     }
 }

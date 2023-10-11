@@ -50,6 +50,7 @@ public class BuildManager : MonoBehaviour
         //태그가 Installable인 오브젝트를 넘겨받았을때만.
         if (OriginalPrefab != null)
         {
+            OriginalPrefab.GetComponent<InstallableObject>().PreViewMaterial();
             //Debug.DrawRay(OriginalPrefab.transform.position, OriginalPrefab.transform.up * (-10f), Color.green, 0.3f);
             //MaxDistance 조절
             if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 position))
@@ -99,6 +100,7 @@ public class BuildManager : MonoBehaviour
                         if (press == true)
                         {
                             //설치 이펙트
+                            OriginalPrefab.GetComponent<InstallableObject>().OrigianlMaterial();
                             //위치고정과 초기화
                             OriginalPrefab.GetComponent<BoxCollider>().enabled = true;
                             OriginalPrefab.transform.position = hitPosition;
