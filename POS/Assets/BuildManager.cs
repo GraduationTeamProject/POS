@@ -31,14 +31,7 @@ public class BuildManager : MonoBehaviour
     }
     void Start()
     {
-        /*현 코드의 문제점:
-         내가 원하는 바: raycast로 레이어가 9번인 물체(바닥)만 검출하고싶어서 
-        Physics.Raycast(RightController.transform.position, RightController.transform.forward, out RaycastHit hitInfo, 10,9))
-        라고 적었는데 검출이안된다. 맨 뒤 파라미터인 9를 지우고 모든 콜라이더를 검출해서 콜라이더의 레이어값을  추출하니까 Default(0)이나 
-        Installable(8) 나옴.
-        바닥(Layer:9)번이 검출이안되는상태. 왜그러지?/
-        
-         예상 : 1) ray끝에 오브젝트가 달려있어서 오브젝트가 먼저검출된다.*/
+        //레이어마스크 지정
         layerMask = 1 << LayerMask.NameToLayer("Map");
     }
 
@@ -70,18 +63,11 @@ public class BuildManager : MonoBehaviour
             }
 
             Debug.Log("Layer:" + Layer);
-            //위치
-            //OriginalPrefab.transform.position = new Vector3(
-            //    RightController.transform.position.x + RightController.transform.forward.x * MaxDistance,
-            //    yPos,
-            //    RightController.transform.position.z + RightController.transform.forward.z * MaxDistance);
+   
 
             OriginalPrefab.transform.position = hitPosition;
 
-            //if (Physics.Raycast(OriginalPrefab.transform.position, OriginalPrefab.transform.up*(-1),out RaycastHit hit,10,9))
-            //{
-            //    yPos = hit.point.y;
-            //}
+         
 
             if (Physics.Raycast(RightController.transform.position, RightController.transform.forward, out RaycastHit hitInfo, MaxDistance, layerMask))
             {
